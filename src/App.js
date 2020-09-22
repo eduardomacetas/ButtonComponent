@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Button/>
       <Button disabled="true"/>
+      <Button disableShadow="true"/>
     </div>
   );
 }

@@ -30,6 +30,14 @@ const StyledButton = styled.div`
       `
     }
 
+    ${({ disableShadow }) =>
+      disableShadow &&
+      css`
+        background: #3D5AFE;
+        color: white;
+      `
+    }
+
   };
 `
 
@@ -39,7 +47,8 @@ function Button(props) {
 }
 
 Button.defaultProps = {
-  disabled: false
+  disabled: false,
+  disableShadow: false
 }
 
 
