@@ -2,17 +2,37 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import styled, { css } from 'styled-components'
 
+const HEIGHT_SIZES = {
+  sm: '32px',
+  md: '36px',
+  lg: '42px'
+}
+
+const WIDTH_SIZES = {
+  sm: '73px',
+  md: '81px',
+  lg: '91px'
+}
+
+const heightSize = ({size}) => {
+  if(size) return HEIGHT_SIZES[size]
+}
+
+const widthSize = ({size}) => {
+  if(size) return WIDTH_SIZES[size]
+}
+
 // Styled component named StyledButton
 const StyledButton = styled.div`
   && {
     background: #E0E0E0;
     border-radius: 6px;
-    color: #3f3f3f;
+    color: #3f3f3f; 
     font-size: 14px;
-    height: 36px;
+    height: ${heightSize};
     text-align: center;
     line-height: 30px;
-    width: 81px;
+    width: ${widthSize};
 
     &:hover {
     background: #AEAEAE;
@@ -37,7 +57,6 @@ const StyledButton = styled.div`
         color: white;
       `
     }
-
   };
 `
 
@@ -48,7 +67,8 @@ function Button(props) {
 
 Button.defaultProps = {
   disabled: false,
-  disableShadow: false
+  disableShadow: false,
+  size: "md",
 }
 
 

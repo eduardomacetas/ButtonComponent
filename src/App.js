@@ -8,6 +8,7 @@ function App() {
       <Button/>
       <Button disabled="true"/>
       <Button disableShadow="true"/>
+      <Button size="sm" />
     </div>
   );
 }
