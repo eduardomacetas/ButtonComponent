@@ -2,17 +2,8 @@ import { render } from '@testing-library/react';
 import React from 'react';
 import styled, { css } from 'styled-components'
 
-const HEIGHT_SIZES = {
-  sm: '32px',
-  md: '36px',
-  lg: '42px'
-}
+import { HEIGHT_SIZES, WIDTH_SIZES, COLORS, HOVER_COLOR } from '../shared/constants';
 
-const WIDTH_SIZES = {
-  sm: '73px',
-  md: '81px',
-  lg: '91px'
-}
 
 const heightSize = ({size}) => {
   if(size) return HEIGHT_SIZES[size]
@@ -22,23 +13,45 @@ const widthSize = ({size}) => {
   if(size) return WIDTH_SIZES[size]
 }
 
+const buttonBackgroundColor = ({color}) => {
+  if(color) return COLORS[color]
+}
+
+const buttonHoverBackgroundColor = ({color}) => {
+  if(color) return HOVER_COLOR[color]
+}
+
+const buttonColor = ({color}) => {
+  if (color === 'default') return COLORS.darkGray
+  return COLORS.white
+}
+
+
+const variantOption = {
+  outline: {
+    border: "1px solid #3D5AFE"
+  },
+  text: {
+    border: "1px solid #fff"
+  }
+}
+
 // Styled component named StyledButton
-const StyledButton = styled.div`
-  && {
-    background: #E0E0E0;
+const StyledButton = styled.div` {
+    background: ${buttonBackgroundColor};
     border-radius: 6px;
-    color: #3f3f3f; 
+    color: ${buttonColor}; 
     font-size: 14px;
     height: ${heightSize};
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     width: ${widthSize};
 
-    &:hover {
-    background: #AEAEAE;
+    :hover {
+    background: ${buttonHoverBackgroundColor};
     }
 
-    &:focus {
+    :focus {
     background: #AEAEAE;
     }
 
@@ -57,6 +70,20 @@ const StyledButton = styled.div`
         color: white;
       `
     }
+
+    ${({ variant }) =>
+      variant &&
+      variantOption[variant] &&
+      css`
+        background: white;
+        color: blue;
+        border: ${variantOption[variant].border}
+        :hover{
+          background: rgba(41, 98, 255, 0.1);
+        } 
+      `
+    }
+
   };
 `
 
@@ -69,6 +96,7 @@ Button.defaultProps = {
   disabled: false,
   disableShadow: false,
   size: "md",
+  color: "default"
 }
 
 
