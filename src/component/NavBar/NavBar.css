@@ -1,0 +1,43 @@
+.navBar {
+  background: skyblue;
+  /* background: #FAFBFD; */
+  display: block;
+  margin: 0;
+  padding: 0;
+  height: 1234px;
+  width: 237px;
+}
+
+.navBar .nav-wrapped {
+  padding-top: 180px; 
+}
+
+.navBar .title {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  left: 48px;
+  padding-top: 47px;
+  position: relative;
+}
+
+.navBar .item {
+  /* color: #9E9E9E; */
+  color: blue;
+  left: 48px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px;
+  position: relative;  
+}
+
+.navBar .item:hover {
+  color: #090F31;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #F7542E;
+}
