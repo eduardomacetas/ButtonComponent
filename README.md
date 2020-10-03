@@ -1,4 +1,4 @@
-<!-- Please update value in the {}  -->
+  <!-- Please update value in the {}  -->
 
 <h1 align="center">{Your project name}</h1>
 
@@ -88,5 +88,5 @@ $ npm start
 ## Contact
 
 - Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/eduardomacetas})
-- Twitter [@your-twitter](https://{twitter.com/eduardo_macetas})
+- **GitHub** [@eduardomacetas](https://github.com/eduardomacetas)
+- **Twitter** [@eduardo_macetas](https://twitter.com/eduardo_macetas)
