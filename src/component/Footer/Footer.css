@@ -1,0 +1,11 @@
+.footer {
+  position: absolute;
+  color: black;
+  left: 320px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer a {
+  text-decoration: none;
+}
