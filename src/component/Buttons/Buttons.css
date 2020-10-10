@@ -1,9 +1,14 @@
+.buttons {
+  grid-area: main;
+  background-color: #8fd4d9;
+}
+
 .buttons .title {
-  position: absolute;
-  color: #4F4F4F;
-  left: 320px;
-  top: 53px;
-  font-style: normal;
+  font-weight: 500;
   font-size: 24px;
+  left: 320px;
   line-height: 36px;
+  position: absolute;
+  top: 53px;
+  
 }
