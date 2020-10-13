@@ -20,3 +20,21 @@ export const COLORS = {
   darkGray: '#3F3F3F',
   white: '#fff'
 }
+
+export const HOVER_COLOR = {
+  default: '#AEAEAE',
+  primary: '#0039CB',
+  secondary: '#1C313A',
+  danger: '#9A0007'
+}
+
+export const SIZES = {
+  small: '10px',
+  medium: '12px',
+  large: '15px'
+}
+
+export const FONT_WEIGHTS = {
+  normal: 400,
+  bold: 700
+}
