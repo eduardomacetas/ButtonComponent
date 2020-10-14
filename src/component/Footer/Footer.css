@@ -1,4 +1,5 @@
 .footer {
+  grid-area: footer;
   position: absolute;
   color: black;
   left: 320px;
