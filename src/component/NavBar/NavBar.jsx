@@ -4,7 +4,7 @@ import './NavBar.css';
 class NavBar extends React.Component {
   render() {
     return (
-    <div className="navBar">
+    <div className="navbar">
       <div className="title">
         <span className="highlight">Dev</span>challenges.io
       </div>
