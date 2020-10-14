@@ -7,9 +7,10 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 50px 1fr 50px;
+  background-color: #ffffff;
+  grid-template-columns: 240px 1fr;
   grid-template-areas:
+    'navbar header'
     'navbar main'
     'navbar footer';
   height: 100vh;
