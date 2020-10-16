@@ -1,12 +1,12 @@
 .footer {
-  grid-area: footer;
-  position: absolute;
-  color: black;
-  left: 320px;
-  font-weight: 600;
+  position: relative;
+  color: #828282;
+  left: 32px;
+  top: 32px;
   font-size: 12px;
-  line-height: 15px;
+  font-weight: 600;
 }
+
 .footer a {
   text-decoration: none;
 }
