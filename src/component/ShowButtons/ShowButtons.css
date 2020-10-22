@@ -1,0 +1,14 @@
+.main {
+  margin: 64px 32px 88px;
+}
+
+.show-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-right: 236px;
+}
+
+.show-buttons .show-button {
+  margin-bottom: 41px;
+}
+
