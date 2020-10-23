@@ -18,7 +18,8 @@ export const COLORS = {
   secondary: '#455A64',
   danger:  '#D32F2F',
   darkGray: '#3F3F3F',
-  white: '#fff'
+  white: '#fff',
+  gray: '#828282'
 }
 
 export const HOVER_COLOR = {
