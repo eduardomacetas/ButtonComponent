@@ -9,12 +9,12 @@ class NavBar extends React.Component {
         <span className="highlight">Dev</span>challenges.io
       </div>
       <div className="nav-wrapped">
-        <div className="item"> Colors </div>
-        <div className="item"> Typography </div>
-        <div className="item"> Spaces </div>
-        <div className="item"> Buttons </div>
-        <div className="item"> Inputs </div>
-        <div className="item"> Grid </div>
+        <a className="item" href="#Colors"> Colors </a>
+        <a className="item" href="#Typography"> Typography </a>
+        <a className="item" href="#Spaces"> Spaces </a>
+        <a className="item" href="#Buttons"> Buttons </a>
+        <a className="item" href="#Inputs"> Inputs </a>
+        <a className="item" href="#Grid"> Grid </a>
       </div>
     </div>
   )}
