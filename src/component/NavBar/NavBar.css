@@ -1,18 +1,22 @@
-.navBar {
+.navbar {
+  grid-area: navbar;
   background: skyblue;
-  /* background: #FAFBFD; */
-  display: block;
+  /* Original backgroundColor #FAFBFD */
+  /* background: #FAFBFD; */ 
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  height: 1234px;
-  width: 237px;
+  height: 100%;
+  width: 240px;
+  position: relative;
 }
 
-.navBar .nav-wrapped {
+.navbar .nav-wrapped {
   padding-top: 180px; 
 }
 
-.navBar .title {
+.navbar .title {
   font-size: 13px;
   font-style: normal;
   font-weight: 600;
@@ -22,18 +26,21 @@
   position: relative;
 }
 
-.navBar .item {
+.navbar .item {
+  /* Original color #9E9E9E */
   /* color: #9E9E9E; */
+  position: static;
+  display: block;
   color: blue;
-  left: 48px;
+  margin: 24px 0 24px;
   line-height: 20px;
   font-size: 14px;
   font-weight: 500;
-  padding: 15px;
-  position: relative;  
+  padding: 0 0 0 48px;
+  text-decoration: none;
 }
 
-.navBar .item:hover {
+.navbar .item:hover {
   color: #090F31;
   font-weight: bold;
 }
