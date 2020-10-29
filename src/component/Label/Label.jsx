@@ -11,7 +11,7 @@ const StyledText = styled.div`{
 `
 
 function Label(props) {
-  return <StyledText {...props}> {props.children} </StyledText>
+  return <StyledText {...props}> {props.text} </StyledText>
 }
 
 Text.defaultProps = {
