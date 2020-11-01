@@ -4,11 +4,12 @@
 
 .show-buttons {
   display: grid;
+  align-items: flex-end;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   margin-right: 236px;
 }
 
-.show-buttons .show-button {
+.show-buttons .show-button {  
   margin-bottom: 41px;
 }
 
