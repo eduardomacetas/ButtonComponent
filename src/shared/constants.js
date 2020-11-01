@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const HEIGHT_SIZES = {
   sm: '32px',
   md: '36px',
@@ -9,7 +7,7 @@ export const HEIGHT_SIZES = {
 export const WIDTH_SIZES = {
   sm: '73px',
   md: '81px',
-  lg: '91px'
+  lg: '93px'
 }
 
 export const COLORS = {
@@ -19,7 +17,8 @@ export const COLORS = {
   danger:  '#D32F2F',
   darkGray: '#3F3F3F',
   white: '#fff',
-  gray: '#828282'
+  gray: '#828282',
+  mediumgray: '#9E9E9E',
 }
 
 export const HOVER_COLOR = {
