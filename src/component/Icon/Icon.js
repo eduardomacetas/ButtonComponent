@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Globe = () => {
+const ShoppingCart = () => {
   return (
     <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -15,4 +15,4 @@ const Globe = () => {
   )
 }
 
-export default Globe;
+export default ShoppingCart;
