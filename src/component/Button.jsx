@@ -1,20 +1,28 @@
-import { render } from '@testing-library/react';
 import React from 'react';
 import styled, { css } from 'styled-components'
-
+import PropTypes from 'prop-types'
 import { HEIGHT_SIZES, WIDTH_SIZES, COLORS, HOVER_COLOR } from '../shared/constants';
-
+import ShoppingCart from '../component/Icon/Icon';
 
 const heightSize = ({size}) => {
-  if(size) return HEIGHT_SIZES[size]
+  return size === "sm"
+    ? HEIGHT_SIZES[size]
+    : size === "lg"
+    ? HEIGHT_SIZES[size]
+    : HEIGHT_SIZES["md"]
 }
 
 const widthSize = ({size}) => {
-  if(size) return WIDTH_SIZES[size]
+  return size === "sm"
+    ? WIDTH_SIZES[size]
+    : size === "lg"
+    ? WIDTH_SIZES[size]
+    : WIDTH_SIZES["md"]
 }
 
 const buttonBackgroundColor = ({color}) => {
   if(color) return COLORS[color]
+  return COLORS.primary
 }
 
 const buttonHoverBackgroundColor = ({color}) => {
@@ -25,7 +33,6 @@ const buttonColor = ({color}) => {
   if (color === 'default') return COLORS.darkGray
   return COLORS.white
 }
-
 
 const variantOption = {
   outline: {
@@ -38,14 +45,16 @@ const variantOption = {
 
 // Styled component named StyledButton
 const StyledButton = styled.div` {
+    display: flex;
+    align-items: center;
     background: ${buttonBackgroundColor};
     border-radius: 6px;
     color: ${buttonColor}; 
     font-size: 14px;
     height: ${heightSize};
-    text-align: center;
-    line-height: 35px;
     width: ${widthSize};
+    justify-content: center;
+    line-height: 35px;  
 
     :hover {
     background: ${buttonHoverBackgroundColor};
@@ -83,21 +92,43 @@ const StyledButton = styled.div` {
         } 
       `
     }
-
   };
 `
 
-function Button(props) {
+export const Button = ({
   // Use it like any other component.
-  return <StyledButton {...props}> Default </StyledButton>;
+  color,
+  disabled,
+  disableShadow,
+  size,
+  startIcon,
+  endIcon,
+  }) => {
+  return ( 
+    <StyledButton
+      color={color}
+      disabled={disabled}
+      disableShadow={disableShadow}
+      size={size}
+      startIcon={startIcon}
+      endIcon={endIcon}
+    >
+      {startIcon === "local_grocery_store" && <ShoppingCart />}
+      Default
+      {endIcon === "local_grocery_store" && <ShoppingCart />}
+    </StyledButton>
+    );
 }
-
+  
 Button.defaultProps = {
   disabled: false,
   disableShadow: false,
   size: "md",
-  color: "default"
-}
+  color: "default",
+};
 
+Button.propTypes = {
+  size: PropTypes.oneOf(['sm', 'md', 'lg']),
+};
 
 export default Button;
