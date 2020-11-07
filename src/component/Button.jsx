@@ -21,12 +21,23 @@ const widthSize = ({size}) => {
 }
 
 const buttonBackgroundColor = ({color}) => {
-  if(color) return COLORS[color]
-  return COLORS.primary
+  return color === "primary"
+      ? COLORS[color]
+      : color === "secondary"
+      ? COLORS[color]
+      : color === "danger"
+      ? COLORS[color]
+      : COLORS['default']
 }
 
 const buttonHoverBackgroundColor = ({color}) => {
-  if(color) return HOVER_COLOR[color]
+  return color === "primary"
+      ? HOVER_COLOR[color]
+      : color === "secondary"
+      ? HOVER_COLOR[color]
+      : color === "danger"
+      ? HOVER_COLOR[color]
+      : HOVER_COLOR['default']
 }
 
 const buttonColor = ({color}) => {
@@ -128,6 +139,7 @@ Button.defaultProps = {
 };
 
 Button.propTypes = {
+  color: PropTypes.oneOf(['default', 'primary', 'secondary', 'danger']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
 };
 
