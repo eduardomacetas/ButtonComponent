@@ -41,8 +41,13 @@ const buttonHoverBackgroundColor = ({color}) => {
 }
 
 const buttonColor = ({color}) => {
-  if (color === 'default') return COLORS.darkGray
-  return COLORS.white
+  return color === "default"
+    ? COLORS['darkGray']
+    : color === "disabled"
+    ? COLORS['mediumgray']
+    : color === "text"
+    ? '#3D5AFE'
+    : COLORS['white']
 }
 
 const variantOption = {
