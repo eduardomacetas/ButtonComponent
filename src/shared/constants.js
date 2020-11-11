@@ -14,7 +14,7 @@ export const COLORS = {
   default: '#E0E0E0',
   primary: '#2962FF',
   secondary: '#455A64',
-  danger:  '#D32F2F',
+  danger: '#D32F2F',
   darkGray: '#3F3F3F',
   white: '#fff',
   gray: '#828282',
