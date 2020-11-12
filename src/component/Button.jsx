@@ -40,11 +40,11 @@ const buttonHoverBackgroundColor = ({color}) => {
       : HOVER_COLOR['default']
 }
 
-const buttonColor = ({color}) => {
+const buttonColor = ({color}) => {  
   return color === "default"
     ? COLORS['darkGray']
     : color === "disabled"
-    ? COLORS['mediumgray']
+    ? COLORS['mediumgray']  
     : color === "text"
     ? '#3D5AFE'
     : COLORS['white']
@@ -119,6 +119,7 @@ export const Button = ({
   size,
   startIcon,
   endIcon,
+  variant,
   }) => {
   return ( 
     <StyledButton
@@ -128,6 +129,7 @@ export const Button = ({
       size={size}
       startIcon={startIcon}
       endIcon={endIcon}
+      variant={variant}
     >
       {startIcon === "local_grocery_store" && <ShoppingCart />}
       Default
@@ -146,6 +148,9 @@ Button.defaultProps = {
 Button.propTypes = {
   color: PropTypes.oneOf(['default', 'primary', 'secondary', 'danger']),
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
+  startIcon: PropTypes.oneOf(['local_grocery_store']),
+  endIcon: PropTypes.oneOf(['local_grocery_store']),
+  variant: PropTypes.oneOf(['otuline', 'text']),
 };
 
 export default Button;
