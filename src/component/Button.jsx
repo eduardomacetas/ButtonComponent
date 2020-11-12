@@ -85,6 +85,9 @@ const StyledButton = styled.div` {
       css`
         color: #9E9E9E;
         cursor: none;
+        :hover { 
+          pointer-events: none;
+        }
       `
     }
 
@@ -93,6 +96,9 @@ const StyledButton = styled.div` {
       css`
         background: #3D5AFE;
         color: white;
+        :hover {
+          pointer-events: none;
+        }
       `
     }
 
