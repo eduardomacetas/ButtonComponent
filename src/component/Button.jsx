@@ -100,14 +100,14 @@ const StyledButton = styled.div` {
       variant &&
       variantOption[variant] &&
       css`
-        background: white;
+        background: transparent;
         color: blue;
         border: ${variantOption[variant].border}
         :hover{
           background: rgba(41, 98, 255, 0.1);
         } 
       `
-    }
+     }
   };
 `
 
@@ -147,10 +147,12 @@ Button.defaultProps = {
 
 Button.propTypes = {
   color: PropTypes.oneOf(['default', 'primary', 'secondary', 'danger']),
+  disabled: PropTypes.bool,
+  disableShadow: PropTypes.bool,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
   startIcon: PropTypes.oneOf(['local_grocery_store']),
   endIcon: PropTypes.oneOf(['local_grocery_store']),
-  variant: PropTypes.oneOf(['otuline', 'text']),
+  variant: PropTypes.oneOf(['outline', 'text']),
 };
 
 export default Button;
