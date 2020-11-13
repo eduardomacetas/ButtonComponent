@@ -114,6 +114,28 @@ const StyledButton = styled.div` {
         } 
       `
      }
+
+     ${({ startIcon }) =>
+      startIcon &&
+      css`
+        background: #2962FF;
+        color: #FFFFFF;
+        :hover {
+          pointer-events: none;
+        }
+      `
+     }
+
+     ${({ endIcon }) =>
+      endIcon &&
+      css`
+        background: #2962FF;
+        color: #FFFFFF;
+        :hover {
+          pointer-events:   none;
+        }
+      `
+     }
   };
 `
 
