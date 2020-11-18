@@ -69,6 +69,7 @@ const StyledButton = styled.div` {
     font-size: 14px;
     height: ${heightSize};
     width: ${widthSize};
+    margin: 12px 0 0 0;
     justify-content: center;
     line-height: 35px;  
 
