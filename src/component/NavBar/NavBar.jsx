@@ -6,7 +6,9 @@ class NavBar extends React.Component {
     return (
     <div className="navbar">
       <div className="title">
-        <span className="highlight">Dev</span>challenges.io
+        <a href="https://devchallenges.io/">
+          <span className="highlight">Dev</span>challenges.io
+        </a>
       </div>
       <div className="nav-wrapped">
         <a className="item" href="#Colors"> Colors </a>
