@@ -16,8 +16,6 @@ class ShowButtons extends React.Component {
             <Label text="&:hover, &:focus" color="gray"/>
             <Button />
           </div>
-          <div className="show-button">
-          </div>
         </div>
 
         <div className="show-buttons">
