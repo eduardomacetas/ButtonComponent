@@ -1,11 +1,11 @@
 .footer {
   grid-area: footer;
   position: relative;
-  color: #828282;
+  color: #A9A9A9;
   padding: 32px;
 }
 
 .footer a {
-  color: #828282;
+  color: #A9A9A9;
   text-decoration: none;
 }
