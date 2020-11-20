@@ -17,8 +17,8 @@ export const COLORS = {
   danger: '#D32F2F',
   darkGray: '#3F3F3F',
   white: '#fff',
-  gray: '#828282',
-  gray1: '#333333', 
+  gray1: '#333333',
+  gray3: '#828282',
   mediumgray: '#9E9E9E',
 }
 

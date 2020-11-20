@@ -13,7 +13,7 @@ class ShowButtons extends React.Component {
             <Button />
           </div>
           <div className="show-button">
-            <Label text="&:hover, &:focus" color="gray"/>
+            <Label text="&:hover, &:focus" color="gray3"/>
             <Button />
           </div>
         </div>
@@ -24,7 +24,7 @@ class ShowButtons extends React.Component {
             <Button variant="outline"/>
           </div>
           <div className="show-button">
-            <Label text="&:hover, &:focus" color="gray"/>
+            <Label text="&:hover, &:focus" color="gray3"/>
             <Button variant="text"/>
           </div>
         </div>
@@ -35,7 +35,7 @@ class ShowButtons extends React.Component {
             <Button variant="text"/>
           </div>
           <div className="show-button">
-            <Label text="&:hover, &:focus" color="gray"/>
+            <Label text="&:hover, &:focus" color="gray3"/>
             <Button variant="text"/>
           </div>
         </div>
@@ -105,7 +105,7 @@ class ShowButtons extends React.Component {
 
         <div className="show-buttons">
           <div className="show-button">
-            <Label text="&:hover, &:focus" color="gray"/>
+            <Label text="&:hover, &:focus" color="gray3"/>
             <Button color="default"/>
           </div>
           <div className="show-button">
