@@ -25,7 +25,7 @@ class ShowButtons extends React.Component {
           </div>
           <div className="show-button">
             <Label text="&:hover, &:focus" color="gray3"/>
-            <Button variant="text"/>
+            <Button variant="outline"/>
           </div>
         </div>
 
